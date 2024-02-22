@@ -1,4 +1,6 @@
 import React from "react";
+
+
 import {
   Navbar,
   Collapse,
@@ -29,16 +31,19 @@ const navListMenuItems = [
     title: "Toyota Camry",
     description: "Find the perfect solution for your needs.",
     icon: FireIcon,
+    path:"./camry"
   },
   {
     title: "Chevrolet Camaro",
     description: "Meet and learn about our dedication",
     icon: FireIcon,
+    path:"./camaro"
   },
   {
     title: "Chevrolet Corvette",
     description: "Find the perfect solution for your needs.",
     icon: FireIcon,
+    path:"./corvette"
   },
   
 ];
@@ -49,8 +54,8 @@ function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = navListMenuItems.map(
-    ({ icon, title, description }, key) => (
-      <a href="#" key={key}>
+    ({ icon, title, description , path}, key) => (
+      <a href={path} key={key}>
         <MenuItem className="flex items-center gap-3 rounded-lg">
           <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
             {" "}
@@ -129,7 +134,7 @@ function NavList() {
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
       <Typography
         as="a"
-        href="#"
+        href="/"
         variant="small"
         color="blue-gray"
         className="font-medium"
@@ -139,7 +144,7 @@ function NavList() {
       <NavListMenu />
       <Typography
         as="a"
-        href="#"
+        href="contact"
         variant="small"
         color="blue-gray"
         className="font-medium"
@@ -167,7 +172,7 @@ export function NavbarWithMegaMenu() {
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
-          href="#"
+          href="/"
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 lg:ml-2"
         >
