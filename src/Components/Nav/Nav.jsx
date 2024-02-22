@@ -18,65 +18,33 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import {
-  Bars4Icon,
-  GlobeAmericasIcon,
-  NewspaperIcon,
-  PhoneIcon,
-  RectangleGroupIcon,
-  SquaresPlusIcon,
-  SunIcon,
-  TagIcon,
-  UserGroupIcon,
+  FireIcon,
 } from "@heroicons/react/24/solid";
  
+
+
+
 const navListMenuItems = [
   {
-    title: "Products",
+    title: "Toyota Camry",
     description: "Find the perfect solution for your needs.",
-    icon: SquaresPlusIcon,
+    icon: FireIcon,
   },
   {
-    title: "About Us",
+    title: "Chevrolet Camaro",
     description: "Meet and learn about our dedication",
-    icon: UserGroupIcon,
+    icon: FireIcon,
   },
   {
-    title: "Blog",
+    title: "Chevrolet Corvette",
     description: "Find the perfect solution for your needs.",
-    icon: Bars4Icon,
+    icon: FireIcon,
   },
-  {
-    title: "Services",
-    description: "Learn how we can help you achieve your goals.",
-    icon: SunIcon,
-  },
-  {
-    title: "Support",
-    description: "Reach out to us for assistance or inquiries",
-    icon: GlobeAmericasIcon,
-  },
-  {
-    title: "Contact",
-    description: "Find the perfect solution for your needs.",
-    icon: PhoneIcon,
-  },
-  {
-    title: "News",
-    description: "Read insightful articles, tips, and expert opinions.",
-    icon: NewspaperIcon,
-  },
-  {
-    title: "Products",
-    description: "Find the perfect solution for your needs.",
-    icon: RectangleGroupIcon,
-  },
-  {
-    title: "Special Offers",
-    description: "Explore limited-time deals and bundles",
-    icon: TagIcon,
-  },
+  
 ];
  
+
+
 function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
@@ -127,7 +95,7 @@ function NavListMenu() {
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
-              Resources
+              Vehicles
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform lg:block ${
@@ -203,7 +171,7 @@ export function NavbarWithMegaMenu() {
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 lg:ml-2"
         >
-          Material Tailwind
+          Payne Auto Sales of Atlanta
         </Typography>
         <div className="hidden lg:block">
           <NavList />
@@ -243,3 +211,4 @@ export function NavbarWithMegaMenu() {
     </Navbar>
   );
 }
+
