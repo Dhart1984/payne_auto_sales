@@ -32,7 +32,7 @@ export function Camaro() {
   return (
     <div className="grid gap-4">
       <div>
-        This is your Camaro page
+        This is is is your Camaro page
         <img
           className="h-auto w-full max-w-full rounded-lg object-cover object-center md:h-[480px]"
           src={active}

@@ -50,7 +50,7 @@ export function FooterWithLogo() {
       </div>
       <hr className="my-8 border-blue-gray-50" />
       <Typography color="blue-gray" className="text-center font-normal">
-  &copy; 2024 Payne Auto Sales of Atlanta
+  &copy; 2024 Payne Autosales of Atlanta
   <div className="text-center">
     6428 Dawson Blvd.
     <br />

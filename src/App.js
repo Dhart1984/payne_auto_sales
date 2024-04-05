@@ -10,7 +10,7 @@ import { Corvette } from './Components/Vehicles/Corvette';
 
 function App() {
   return (
-    <div>
+    <div className='bg-black'>
       <NavbarWithMegaMenu />
 
       <Routes>
